@@ -28,7 +28,6 @@ public class StudentsUI {
 
             try {
                 studentsChoice = scanner.nextInt();
-                //scanner.nextLine();
 
                 switch (studentsChoice) {
                     case 1 -> studentsService.showStudents();

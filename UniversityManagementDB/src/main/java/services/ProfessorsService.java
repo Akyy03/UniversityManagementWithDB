@@ -2,7 +2,6 @@ package services;
 
 import controllers.ProfessorsController;
 import models.ProfessorsModel;
-import models.StudentsModel;
 import uis.ProfessorsUI;
 
 import java.util.ArrayList;

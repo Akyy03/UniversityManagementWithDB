@@ -1,5 +1,6 @@
 package dao;
 
+import models.ClassesModel;
 import models.ProfessorsModel;
 import models.StudentsModel;
 import org.hibernate.SessionFactory;
@@ -28,6 +29,8 @@ public class DatabaseConnection {
 
         configuration.addAnnotatedClass(StudentsModel.class);
         configuration.addAnnotatedClass(ProfessorsModel.class);
+        configuration.addAnnotatedClass(ClassesModel.class);
+
         // + rest of model classes
 
         sessionFactory = configuration.buildSessionFactory();

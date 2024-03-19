@@ -18,10 +18,10 @@ public class ProfessorsController {
         return professors;
     }
 
-    public Optional<ProfessorsModel> findById(ProfessorsModel professorsModel, int id) {
+    /*public Optional<ProfessorsModel> findById(ProfessorsModel professorsModel, int id) {
         List<ProfessorsModel> professorsModels = genericDao.showAll(professorsModel);
         return professorsModels.stream().filter(studentsModel1 -> studentsModel1.getPersonalCode() == id).findFirst();
-    }
+    }*/
 
     public void updateProfessor(ProfessorsModel professorsModel) {
         genericDao.update(professorsModel);
