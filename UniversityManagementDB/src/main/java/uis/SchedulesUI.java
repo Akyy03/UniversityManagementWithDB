@@ -19,10 +19,10 @@ public class SchedulesUI {
             System.out.println("Please choose an option to continue: \n");
 
             System.out.println("1. Show all schedules");
-            System.out.println("2. Add a new class schedule");
+            System.out.println("2. Add a new schedule");
             System.out.println("3. Update an existing schedule's information");
-            System.out.println("4. Remove a class schedule");
-            System.out.println("5. Find a class schedule");
+            System.out.println("4. Remove an existing schedule");
+            System.out.println("5. Find a schedule");
             System.out.println("6. Assign to schedule");
             System.out.println("0. Back");
 

@@ -13,7 +13,7 @@ public class SchedulesModel {
     private int scheduleId;
     private String scheduleName;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "studentsInSchedule", catalog = "universityManagementDB",
             joinColumns = {
                     @JoinColumn(name = "scheduleId", nullable = true, updatable = true)},
@@ -23,7 +23,7 @@ public class SchedulesModel {
     )
     private List<StudentsModel> studentsModels;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "professorsInSchedule", catalog = "universityManagementDB",
             joinColumns = {
                     @JoinColumn(name = "scheduleId", nullable = true, updatable = true)},
@@ -33,7 +33,7 @@ public class SchedulesModel {
     )
     private List<ProfessorsModel> professorsModels;
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinTable(name = "classesInSchedule", catalog = "universityManagementDB",
             joinColumns = {
                     @JoinColumn(name = "scheduleId", nullable = true, updatable = true)},
