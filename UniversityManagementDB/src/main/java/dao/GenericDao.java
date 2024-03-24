@@ -19,7 +19,7 @@ public class GenericDao<G> {
     public void add(G object) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        session.persist(object);
+        session.merge(object);
         transaction.commit();
         if (session != null) {
             session.close();

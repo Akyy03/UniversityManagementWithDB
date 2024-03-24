@@ -2,6 +2,7 @@ package dao;
 
 import models.ClassesModel;
 import models.ProfessorsModel;
+import models.SchedulesModel;
 import models.StudentsModel;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -30,8 +31,7 @@ public class DatabaseConnection {
         configuration.addAnnotatedClass(StudentsModel.class);
         configuration.addAnnotatedClass(ProfessorsModel.class);
         configuration.addAnnotatedClass(ClassesModel.class);
-
-        // + rest of model classes
+        configuration.addAnnotatedClass(SchedulesModel.class);
 
         sessionFactory = configuration.buildSessionFactory();
 
